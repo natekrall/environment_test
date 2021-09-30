@@ -5,7 +5,7 @@ RSpec.describe Book, type: :model do
     described_class.new(title: 'Manufacturing Consent',
                         author: 'Noam Chomsky',
                         price: "18.49",
-                        publicationDate: '1988-03-17')
+                        publishDate: '1988-03-17')
   end
   #Title
   it 'is valid with valid title' do
@@ -43,7 +43,7 @@ RSpec.describe Book, type: :model do
   end
 
   it 'is not valid without a publication date' do
-    subject.publicationDate = nil
+    subject.publishDate = nil
     expect(subject).not_to be_valid
   end
 
