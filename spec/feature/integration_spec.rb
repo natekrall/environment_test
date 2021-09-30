@@ -7,7 +7,7 @@ RSpec.describe 'Creating a book', type: :feature do
     fill_in 'Title', with: 'Manufacturing Consent'
     fill_in 'Author', with: 'Noam Chomsky'
     fill_in 'Price', with: '18.49'
-    fill_in 'PublicationDate', with: '1988-17-03'
+    fill_in 'Publication Date', with: '1988-03-17'
     click_on 'Create Book'
     visit books_path
     expect(page).to have_content('Manufacturing Consent')
@@ -18,7 +18,7 @@ RSpec.describe 'Creating a book', type: :feature do
     fill_in 'Title', with: 'Manufacturing Consent'
     fill_in 'Author', with: 'Noam Chomsky'
     fill_in 'Price', with: '18.49'
-    fill_in 'PublicationDate', with: '1988-17-03'
+    fill_in 'Publication Date', with: '1988-17-03'
     click_on 'Create Book'
     visit books_path
     expect(page).to have_content('Noam Chomsky')
@@ -29,7 +29,7 @@ RSpec.describe 'Creating a book', type: :feature do
     fill_in 'Title', with: 'Manufacturing Consent'
     fill_in 'Author', with: 'Noam Chomsky'
     fill_in 'Price', with: '18.49'
-    fill_in 'PublicationDate', with: '1988-17-03'
+    fill_in 'Publication Date', with: '1988-17-03'
     click_on 'Create Book'
     visit books_path
     expect(page).to have_content('18.49')
@@ -40,7 +40,7 @@ RSpec.describe 'Creating a book', type: :feature do
     fill_in 'Title', with: 'Manufacturing Consent'
     fill_in 'Author', with: 'Noam Chomsky'
     fill_in 'Price', with: '18.49'
-    fill_in 'PublicationDate', with: '1988-17-03'
+    fill_in 'Publication Date', with: '1988-17-03'
     click_on 'Create Book'
     visit books_path
     expect(page).to have_content('1988-17-03')
